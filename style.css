@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'sonic';
+    src: url('fonts/TitanOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+
+    --cor0: #0d1f40;
+    --cor1: #02379a;
+    --cor2: #699dff;
+    --cor3: #9cbeff;
+    --cor4: #cfe0ff;
+
+    --fonte-padrão: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', arial;
+    --fonte-sonic: 'Sonic', sans-serif;
+}
+
+body{
+    background-color: var(--cor4);
+    font-family: var(--fonte-padrão);
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor2),var(--cor3));
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+
+}
+
+header h1{
+    font-family: var(--fonte-destaque);
+    font-size: 4em;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.587);
+    
+}
+
+header p{
+    font-size: 1.3em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.624);
+    padding: 0px 10px 30px 10px;
+   
+}
+
+nav{
+    background-color: var(--cor2);
+    padding-bottom: 10px;
+}
+
+nav a{
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .4s;
+
+}
+
+nav a:hover{
+    background-color: var(--cor3);
+    color: var(--cor1);
+}
+
+main{
+    max-width: 1200px;
+    background-color: white;
+    margin: auto;
+    padding-bottom: 70px;
+   
+}
+
+main h1{
+    font-size: 2.5em;
+    font-family: var(--fonte-sonic);
+    font-weight: normal;
+    color: var(--cor0);
+    padding: 20px;
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor4),transparent);
+    font-size: 2em;
+    font-family: var(--fonte-sonic);
+    font-weight: normal;
+    margin: 10px 15px;
+    padding: 2px 5px;
+    color: var(--cor1);
+}
+
+main p{
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: justify;
+    text-indent: 20px;
+    padding: 10px 25px;
+    min-width: 300px;
+
+}
+
+div.filme{
+    background-color: var(--cor2);
+    position: relative;
+    padding-bottom: 56%;
+}
+
+div iframe{
+    
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main  img{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+main .turma{
+    max-width: 500px;
+}
+
+aside{
+    background-color: var(--cor3);
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+aside h3{
+    font-size: 2em;
+    font-weight: normal;
+    font-family: var(--fonte-sonic);
+    color:white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.563);
+    padding: 20px;
+    background-color: var(--cor2);
+    margin: -20px -20px 0px -20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside p{
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white;
+}
+
+aside img{
+    max-width: 300px;
+}
+
+footer{
+    background-color: var(--cor1);
+    padding: 5px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}
